@@ -1,4 +1,1 @@
 # covid_and_stock_data_engineering_project
-# covid_and_stock_data_engineering_project
-# covid_and_stock_data_engineering_project
-# covid_and_stock_data_engineering_project
