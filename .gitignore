@@ -1,3 +1,7 @@
 venv-project/*
 logs/*
 plugins/*
+*.log
+*.bak
+*.pyc
+__pycache__

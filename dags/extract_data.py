@@ -20,7 +20,7 @@ default_args = {
     'email': ['brus.patrick63@gmail.com'],
     'email_on_failure': False,
     'email_on_retry': False,
-    'retries': 5,
+    'retries': 1,
     'retry_delay': timedelta(minutes=1),
 }
 
@@ -29,7 +29,7 @@ dag = DAG(
     dag_id='extract-data-dag',
     default_args=default_args,
     description='DAG to extract the data from the different sources and put them to AWS S3',
-    schedule_interval=timedelta(minutes=1),
+    schedule_interval=timedelta(minutes=2),
 )
 
 # define the tasks
