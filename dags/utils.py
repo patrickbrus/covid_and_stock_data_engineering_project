@@ -30,8 +30,7 @@ def extract_weather_data(url=URL_WEATHER_DATA, rapid_api_key=RAPIDKEY):
     'x-rapidapi-host': "meteostat.p.rapidapi.com",
     'x-rapidapi-key': rapid_api_key
     }
-
-    print(f"Key: {rapid_api_key}")
+    
     response = requests.request("GET", url, headers=headers, params=querystring)
 
     return pd.DataFrame(json.loads(response.text)["data"])
